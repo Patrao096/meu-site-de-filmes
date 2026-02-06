@@ -19,6 +19,10 @@ export function Navbar() {
           V-FLIX
         </Link>
 
+        <Link to="/favorites" className="text-white hover:text-cyan-400 transition-colors">
+          Meus Favoritos
+        </Link>
+
         <form onSubmit={handleSubmit} className="relative flex-1 max-w-md">
           <input
             type="text"

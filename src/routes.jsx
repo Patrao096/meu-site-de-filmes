@@ -1,20 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { MovieDetail } from './pages/MovieDetail';
-import { Search } from './pages/Search';
+import { Favorites } from './pages/Favorites'; // Verifique se este arquivo existe!
 import { Navbar } from './components/Navbar';
 
 export function AppRoutes() {
   return (
     <BrowserRouter>
-      <Navbar /> {/* Ela aparecerá em todas as páginas */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default AppRoutes;

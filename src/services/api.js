@@ -16,10 +16,10 @@ export const getMovieDetails = async (id) => {
 
 export const searchMovies = async (query) => {
   const response = await fetch(
-    `${BASE_URL}/search/movie?api_key=${API_KEY}&language=pt-BR&query=${query}`
+    `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=pt-BR&query=${encodeURIComponent(query)}`
   );
   const data = await response.json();
-  return data.results;
+  return data.results || [];
 };
 
 

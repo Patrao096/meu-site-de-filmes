@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home'; // Verifique se o 'H' é maiúsculo na pasta
-import { MovieDetail } from './pages/MovieDetail'; // Verifique o 'M' e 'D'
+import { Home } from './pages/Home';
+import { MovieDetail } from './pages/MovieDetail'; 
 import { Search } from './pages/Search';
 import { Favorites } from './pages/Favorites';
 import { Navbar } from './components/Navbar';

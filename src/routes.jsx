@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
+import { Home } from './pages/home';
 import { MovieDetail } from './pages/MovieDetail'; 
 import { Search } from './pages/Search';
 import { Favorites } from './pages/Favorites';

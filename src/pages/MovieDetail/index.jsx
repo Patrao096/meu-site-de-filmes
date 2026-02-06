@@ -123,5 +123,3 @@ export function MovieDetail() {
     </div>
   );
 }
-
-export default MovieDetail;
